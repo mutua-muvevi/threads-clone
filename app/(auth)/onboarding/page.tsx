@@ -10,7 +10,8 @@ async function Page(){
 		id: user?.id,
 		objectId: userInfo?._id,
 		username: userInfo?.username || user?.username,
-		name: userInfo?.name || user?.firstname || "",
+		firstname: userInfo?.firstname || user?.firstname || "",
+		lastname: userInfo?.lastname || user?.lastname || "",
 		bio: userInfo?.bio || "",
 		image: userInfo?.image || user?.imageUrl || "",
 	}
